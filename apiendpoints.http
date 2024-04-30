@@ -1,0 +1,33 @@
+### Get all books
+GET http://localhost:8080/books
+
+### Get book by id
+GET http://localhost:8080/book/3
+
+
+### Post a book
+POST http://localhost:8080/book
+Content-Type: application/json
+
+{
+    "title" : "Fifty Shades",
+    "author" : "Shehan Avishka",
+    "genre" : "Romance",
+    "language" : "English",
+    "availability" : true
+}
+
+### Delete a book by id
+DELETE http://localhost:8080/book/2
+
+### Update a book
+PUT http://localhost:8080/user/6
+Content-Type: application/json
+
+{
+    "title" : "Fifty Shades",
+    "author" : "Anuradha",
+    "genre" : "Romance",
+    "language" : "English",
+    "availability" : true
+}
